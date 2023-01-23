@@ -57,7 +57,7 @@ export const UpdateUser=(info)=>{
     const updates = {};
 
     updates["user/"+info.id]=info
-
+     Toastify("Updated Successfully");
     return update(ref(db), updates);
 
 }

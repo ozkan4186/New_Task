@@ -21,7 +21,7 @@ const FormComponent = ({ info, setInfo, handleSubmit, isAdd }) => {
     setInfo({ ...info, [name]: value });
     console.log(info);
   };
-  const label = { inputProps: { "aria-label": "Checkbox demo" } };
+  // const label = { inputProps: { "aria-label": "Checkbox demo" } };
   return (
     <Grid
       textAlign="center"
@@ -52,6 +52,7 @@ const FormComponent = ({ info, setInfo, handleSubmit, isAdd }) => {
               name="username"
               value={info.username}
               onChange={handleChange}
+              required
               placeholder="Name"
               InputProps={{
                 startAdornment: (
@@ -62,16 +63,19 @@ const FormComponent = ({ info, setInfo, handleSubmit, isAdd }) => {
               }}
             />
             <FormControl sx={{ m: 1, minWidth: 120 }}>
-              <InputLabel htmlFor="grouped-native-select">Sectors</InputLabel>
+              <InputLabel htmlFor="value">Sectors</InputLabel>
               <Select
                 native
                 defaultValue=""
-                id="grouped-native-select"
-                label="Grouping"
+                // id="value"
+                label="Sectors"
+                name="sectors"
+                value={info.sectors}
+                onChange={handleChange}
               >
                 <option aria-label="None" value="" />
                 <optgroup label="Category 1">
-                  <option value={1}>Option 1</option>
+                  <option value={"Option 1"}>Option 1</option>
                   <option value={2}>Option 2</option>
                 </optgroup>
                 <optgroup label="Category 2">
@@ -80,7 +84,11 @@ const FormComponent = ({ info, setInfo, handleSubmit, isAdd }) => {
                 </optgroup>
               </Select>
             </FormControl>
-            <Checkbox {...label} />
+            <div className="d-flex">
+              <Checkbox   required />
+              <span>Agree to terms</span>
+            </div>
+
             <Button variant="contained" type="submit" value="Submit">
               {isAdd}
             </Button>
@@ -88,7 +96,7 @@ const FormComponent = ({ info, setInfo, handleSubmit, isAdd }) => {
         </form>
       </Box>
     </Grid>
-  );
+  ); 
 };
 
 export default FormComponent;
