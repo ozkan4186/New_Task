@@ -389,7 +389,7 @@ const FormComponent = ({ info, setInfo, handleSubmit, isAdd }) => {
               </Select>
             </FormControl>
             <div className="d-flex">
-              <Checkbox required />
+              <Checkbox value={info.agree} required />
               <span>Agree to terms</span>
             </div>
 

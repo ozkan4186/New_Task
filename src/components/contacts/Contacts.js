@@ -63,7 +63,7 @@ const Contacts = ({editUser}) => {
                   <TableCell
                     align="center"
                     onClick={() =>
-                      editUser(item.id, item.username, item.sectors)
+                      editUser(item.id, item.username, item.sectors,item.agree)
                     }
                   >
                     <EditIcon />
