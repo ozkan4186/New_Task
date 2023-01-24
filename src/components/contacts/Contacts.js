@@ -18,7 +18,7 @@ const Contacts = ({editUser}) => {
     <div>
       <h2 className="contact-header">Contacts</h2>
       <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <Table sx={{ minWidth: 350 }} aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell>Username</TableCell>
@@ -29,46 +29,48 @@ const Contacts = ({editUser}) => {
           </TableHead>
 
           <TableBody>
-            {
-            
-              isLoading ? (
-                <TableRow
-                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                >
-                  <TableCell colSpan={5} align="center">
-                    Loading
+            {isLoading ? (
+              <TableRow
+                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+              >
+                <TableCell colSpan={5} align="center">
+                  Loading
+                </TableCell>
+              </TableRow>
+            ) : contactList?.lenght === 0 ? (
+              // Bilgiler olmadığı,boş olduğu  durumda veri bulunamadı mesajı
+              <TableRow
+                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+              >
+                <TableCell colSpan={5} align="center">
+                  No Result Found
+                </TableCell>
+              </TableRow>
+            ) : (
+              // Bilgiler geldiği zaman aşağıya yazılacak kodlar çalışsın
+              contactList?.map((item, index) => (
+                <TableRow>
+                  <TableCell
+
+                    align="center"
+                  >
+                    {item.username}{" "}
+                  </TableCell>
+                  <TableCell align="center">{item.sectors} </TableCell>
+                  <TableCell align="center" onClick={() => DeleteUser(item.id)}>
+                    <DeleteIcon />
+                  </TableCell>
+                  <TableCell
+                    align="center"
+                    onClick={() =>
+                      editUser(item.id, item.username, item.sectors)
+                    }
+                  >
+                    <EditIcon />
                   </TableCell>
                 </TableRow>
-              ) : contactList?.lenght === 0 ? (
-                // Bilgiler olmadığı,boş olduğu  durumda veri bulunamadı mesajı
-                <TableRow
-                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                >
-                  <TableCell colSpan={5} align="center">
-                    No Result Found
-                  </TableCell>
-                </TableRow>
-              ) : (
-                // Bilgiler geldiği zaman aşağıya yazılacak kodlar çalışsın
-                contactList?.map((item, index) => (
-                  <TableRow>
-                    <TableCell align="center">{item.username} </TableCell>
-                    <TableCell align="center">{item.sectors} </TableCell>
-                    <TableCell align="center" onClick={()=>DeleteUser(item.id)}>
-                      <DeleteIcon />
-                    </TableCell>
-                    <TableCell align="center" onClick={()=>editUser(
-                      item.id,
-                      item.username,
-                      item.sectors, 
-                      
-                    )}>
-                      <EditIcon />
-                    </TableCell>
-                  </TableRow>
-                ))
-              )
-            }
+              ))
+            )}
           </TableBody>
         </Table>
       </TableContainer>
