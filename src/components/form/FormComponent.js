@@ -27,7 +27,7 @@ const FormComponent = ({ info, setInfo, handleSubmit, isAdd }) => {
       textAlign="center"
       verticalAlign="middle"
       direction="column"
-      style={{ width: "300" }}
+      // style={{ width: "300" }}
     >
       <p className="contact-header">
         <div>
@@ -43,7 +43,7 @@ const FormComponent = ({ info, setInfo, handleSubmit, isAdd }) => {
         <span className="design header">design</span>
       </p>
       <h2 className="contact-header">
-        Add Contact
+        Add Task
         <br />
         <p>
           (Please enter your name and pick the Sectors you are currently
