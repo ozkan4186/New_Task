@@ -76,72 +76,72 @@ const FormComponent = ({ info, setInfo, handleSubmit, isAdd }) => {
               >
                 <option aria-label="None" value="" />
                 <optgroup value={1} label="Manufacturing">
-                  <option value="19">
+                  <option value="Construction materials">
                     &nbsp;&nbsp;&nbsp;&nbsp;Construction materials
                   </option>
-                  <option value="18">
+                  <option value="Electronics and Optics">
                     &nbsp;&nbsp;&nbsp;&nbsp;Electronics and Optics
                   </option>
                   <optgroup
                     value={6}
                     label=" &nbsp;&nbsp;&nbsp;&nbsp; Food and Beverage "
                   >
-                    <option value="342">
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bakery
-                      &amp; confectionery products
+                    <option value="Baker&amp; confectionery products">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Baker&amp;
+                      confectionery products
                     </option>
-                    <option value="43">
+                    <option value="Beverages">
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beverages
                     </option>
-                    <option value="42">
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fish &amp;
-                      fish products{" "}
+                    <option value=" Fish &amp;fish products">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fish
+                      &amp; fish products{" "}
                     </option>
-                    <option value="40">
+                    <option value="Meat &amp; meat products">
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meat &amp;
                       meat products
                     </option>
-                    <option value="39">
+                    <option value="Milk &amp; dairy products">
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Milk &amp;
                       dairy products{" "}
                     </option>
                   </optgroup>
 
-                  <option value="437">
+                  <option value="Other">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other
                   </option>
-                  <option value="378">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sweets &amp;
-                    snack food
+                  <option value="Sweets &amp;snack food">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sweets
+                    &amp;snack food
                   </option>
                 </optgroup>
 
                 <optgroup value={1} label="Food &amp; Baverage">
-                  <option value="389">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bakery &amp;
-                    confectionery products
+                  <option value="Bakery &amp;confectionery products">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bakery
+                    &amp;confectionery products
                   </option>
-                  <option value="385">
+                  <option value="Beverages">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beverages
                   </option>
-                  <option value="390">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fish &amp;
-                    fish products{" "}
+                  <option value="Fish &amp;fish products">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fish
+                    &amp;fish products{" "}
                   </option>
-                  <option value="98">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meat &amp;
-                    meat products
+                  <option value="Meat &amp;meat products">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meat
+                    &amp;meat products
                   </option>
-                  <option value="101">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Milk &amp;
-                    dairy products{" "}
+                  <option value="Milk &amp;dairy products">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Milk
+                    &amp;dairy products{" "}
                   </option>
-                  <option value="394">
+                  <option value="Other">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other
                   </option>
-                  <option value="341">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;weets &amp;
-                    snack food
+                  <option value="weets &amp;snack food">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;weets
+                    &amp;snack food
                   </option>
                 </optgroup>
 
@@ -185,163 +185,157 @@ const FormComponent = ({ info, setInfo, handleSubmit, isAdd }) => {
                 </optgroup>
 
                 <optgroup value={1} label="Machinery">
-                  <option value="94">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Machinery
-                    components
+                  <option value="Machinerycomponents">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Machinerycomponents
                   </option>
-                  <option value="91">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Machinery
-                    equipment/tools
+                  <option value="Machineryequipment/tools">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Machineryequipment/tools
                   </option>
-                  <option value="224">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manufacture
-                    of machinery{" "}
+                  <option value="Manufactureof machinery">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manufactureof
+                    machinery{" "}
                   </option>
                 </optgroup>
 
                 <optgroup value={1} label="Maritime">
-                  <option value="271">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aluminium
-                    and steel workboats{" "}
+                  <option value="Aluminiumand steel workboats">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aluminiumand
+                    steel workboats{" "}
                   </option>
-                  <option value="269">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Boat/Yacht
-                    building
+                  <option value="Boat/Yachtbuilding">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Boat/Yachtbuilding
                   </option>
-                  <option value="230">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ship
-                    repair and conversion
+                  <option value="Shiprepair and conversion">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shiprepair
+                    and conversion
                   </option>
-                  <option value="230">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Metal
-                    Structures
+                  <option value="MetalStructures">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MetalStructures
                   </option>
-                  <option value="230">
+                  <option value="Other">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other
                   </option>
-                  <option value="227">
+                  <option value="Repair and maintenance service ">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Repair and
                     maintenance service
                   </option>
                 </optgroup>
 
                 <optgroup value={1} label="MetalWorking">
-                  <option value="67">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construction
-                    of metal structures
+                  <option value="Constructionof metal structures">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructionof
+                    metal structures
                   </option>
-                  <option value="263">
+                  <option value="Houses and buildings">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Houses and
                     buildings
                   </option>
-                  <option value="267">
+                  <option value="Metal products">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Metal
                     products
                   </option>
-                  <option value="542">
+                  <option value="Metal works">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Metal works
                   </option>
                 </optgroup>
 
                 <optgroup value={1} label="Metalworks">
-                  <option value="75">
+                  <option value="CNC-machining">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CNC-machining
                   </option>
-                  <option value="62">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forgings,
-                    Fasteners{" "}
+                  <option value="Forgings,Fasteners">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forgings,Fasteners{" "}
                   </option>
-                  <option value="69">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gas,
-                    Plasma, Laser cutting
+                  <option value="Gas,Plasma, Laser cutting">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gas,Plasma,
+                    Laser cutting
                   </option>
-                  <option value="66">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MIG,
-                    TIG, Aluminum welding
+                  <option value="MIG,TIG, Aluminum welding">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MIG,TIG,
+                    Aluminum welding
                   </option>
                 </optgroup>
 
                 <optgroup value={1} label="Plastic &amp; Rubber">
-                  <option value="54">
+                  <option value="Packaging">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Packaging
                   </option>
-                  <option value="556">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plastic
-                    goods
+                  <option value="Plasticgoods">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plasticgoods
                   </option>
                 </optgroup>
 
                 <optgroup value={1} label="Plastic processing technology">
-                  <option value="55">
+                  <option value="Blowing">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blowing
                   </option>
-                  <option value="57">
+                  <option value="Moulding">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moulding
                   </option>
-                  <option value="53">
+                  <option value="Plastics welding and processing">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plastics
                     welding and processing
                   </option>
-                  <option value="560">
+                  <option value="Plastic profiles">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plastic
                     profiles
                   </option>
                 </optgroup>
 
                 <optgroup value={1} label="Printing">
-                  <option value="148">
+                  <option value="Advertising">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Advertising
                   </option>
-                  <option value="150">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Book/Periodicals
-                    printing
+                  <option value="Book/Periodical sprinting">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Book/Periodical
+                    sprinting
                   </option>
-                  <option value="145">
+                  <option value="Labelling and packaging printing">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Labelling
                     and packaging printing
                   </option>
                 </optgroup>
 
                 <optgroup value={1} label="Textile &amp; Clothing">
-                  <option value="44">
+                  <option value="Clothing">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clothing
                   </option>
-                  <option value="45">
+                  <option value="Textile">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Textile
                   </option>
                 </optgroup>
 
                 <optgroup value={1} label="Wood">
-                  <option value="337">
+                  <option value="Other (Wood)">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other (Wood)
                   </option>
-                  <option value="51">
+                  <option value="Wooden building materials">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wooden
                     building materials
                   </option>
-                  <option value="47">
+                  <option value="Wooden houses">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wooden
                     houses
                   </option>
                 </optgroup>
 
                 <optgroup value={1} label="Other">
-                  <option value="37">
+                  <option value="Creative industries">
                     &nbsp;&nbsp;&nbsp;&nbsp;Creative industries
                   </option>
-                  <option value="29">
+                  <option value="Energy technology">
                     &nbsp;&nbsp;&nbsp;&nbsp;Energy technology
                   </option>
-                  <option value="33">
+                  <option value="Environment">
                     &nbsp;&nbsp;&nbsp;&nbsp;Environment
                   </option>
                 </optgroup>
 
                 <optgroup value={1} label="Service">
-                  <option value="25">
+                  <option value="Business services">
                     &nbsp;&nbsp;&nbsp;&nbsp;Business services
                   </option>
-                  <option value="35">
+                  <option value="Engineering">
                     &nbsp;&nbsp;&nbsp;&nbsp;Engineering
                   </option>
                 </optgroup>
@@ -350,40 +344,38 @@ const FormComponent = ({ info, setInfo, handleSubmit, isAdd }) => {
                   value={1}
                   label="Information Technology and Telecommunications"
                 >
-                  <option value="581">
+                  <option value="Data processing, Web portals, E-marketing">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data
                     processing, Web portals, E-marketing
                   </option>
-                  <option value="576">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Programming,
-                    Consultancy
+                  <option value="Programming,Consultancy">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Programming,Consultancy
                   </option>
-                  <option value="121">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software,
-                    Hardware
+                  <option value="Software,Hardware">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Software,Hardware
                   </option>
-                  <option value="122">
+                  <option value="Telecommunications">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telecommunications
                   </option>
                 </optgroup>
 
-                <option value="22">&nbsp;&nbsp;&nbsp;&nbsp;Tourism</option>
+                <option value="Tourism">&nbsp;&nbsp;&nbsp;&nbsp;Tourism</option>
 
-                <option value="141">
+                <option value="Translation services">
                   &nbsp;&nbsp;&nbsp;&nbsp;Translation services
                 </option>
 
                 <optgroup value={1} label="Transport &amp; Logistic">
-                  <option value="111">
+                  <option value="Air">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Air
                   </option>
-                  <option value="114">
+                  <option value="Rail">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rail
                   </option>
-                  <option value="112">
+                  <option value="Road">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Road
                   </option>
-                  <option value="113">
+                  <option value="Water">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Water
                   </option>
                 </optgroup>
