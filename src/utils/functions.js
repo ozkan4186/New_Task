@@ -14,6 +14,7 @@ export const AddUser=(info)=>{
     set(newUserRef, {
       username: info.username,
       sectors: info.sectors,
+      agree:true
     });
   
 }

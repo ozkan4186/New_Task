@@ -8,7 +8,7 @@ import { ToastContainer } from "react-toastify";
 const initialValues={
   username:"",
   sectors:"",
-  
+  agree:false
 }
 function App() {
   const [info, setInfo] = useState(initialValues)
@@ -26,9 +26,9 @@ function App() {
     setIsAdd("ADD")
   }
 
-  const editUser = (id, username, sectors) => {
+  const editUser = (id, username, sectors,agree) => {
     setIsAdd("UPDATE");
-    setInfo({ id, username, sectors });
+    setInfo({ id, username, sectors,agree });
   };
 
   return (
