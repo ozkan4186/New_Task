@@ -42,7 +42,14 @@ const FormComponent = ({ info, setInfo, handleSubmit, isAdd }) => {
         </div>
         <span className="design header">design</span>
       </p>
-      <h2 className="contact-header">Add Contact</h2>
+      <h2 className="contact-header">
+        Add Contact
+        <br />
+        <p>
+          (Please enter your name and pick the Sectors you are currently
+          involved in.)
+        </p>
+      </h2>
 
       <Box style={{ backgroundColor: "white", padding: "20px" }}>
         <form onSubmit={handleSubmit}>
